@@ -1,0 +1,227 @@
+body {
+    background-color: #f0f2f5;
+
+    color: #333;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+
+}
+
+h1 {
+    color: #2d69fd;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.unit-converter-tabs {
+    display: flex;
+    background-color: #fff;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.length-tab,
+.weight-tab,
+.temperature-tab {
+    background-color: transparent;
+
+    border: none;
+
+    color: #555;
+
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.length-tab:hover,
+.weight-tab:hover,
+.temperature-tab:hover {
+    background-color: #e9ecef;
+
+    color: #333;
+}
+
+.length-tab:focus,
+.weight-tab:focus,
+.temperature-tab:focus {
+    outline: none;
+
+    background-color: #d0d3d4;
+}
+
+.form-section-length,
+.form-section-weight,
+.form-section-temperature {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 400px;
+
+    visibility: visible;
+
+    display: none;
+
+}
+
+
+.form-section-length.active,
+.form-section-weight.active,
+.form-section-temperature.active {
+    display: block;
+}
+
+.form-section-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+    padding: 0;
+
+    width: 100%;
+
+}
+
+.form-section-form label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#input-value-l,
+#input-unit-from-l,
+#input-unit-to-l,
+#input-value-w,
+#input-unit-from-w,
+#input-unit-to-w,
+#input-value-t,
+#input-unit-from-t,
+#input-unit-to-t {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+#length-form-button,
+#weight-form-button,
+#temperature-form-button {
+    background-color: #2d69fd;
+
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+
+    margin-top: 10px;
+}
+
+#length-form-button:hover,
+#weight-form-button:hover,
+#temperature-form-button:hover {
+    background-color: #0049c6;
+
+}
+
+
+body::after {
+    content: '';
+    display: block;
+    height: 40px;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode h1 {
+    color: #bb86fc;
+}
+
+body.dark-mode .unit-converter-tabs {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .length-tab,
+body.dark-mode .weight-tab,
+body.dark-mode .temperature-tab {
+    color: #bbb;
+}
+
+body.dark-mode .length-tab:hover,
+body.dark-mode .weight-tab:hover,
+body.dark-mode .temperature-tab:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .form-section-length,
+body.dark-mode .form-section-weight,
+body.dark-mode .form-section-temperature {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .form-section-form label {
+    color: #bbb;
+}
+
+body.dark-mode #input-value-l,
+body.dark-mode #input-unit-from-l,
+body.dark-mode #input-unit-to-l,
+body.dark-mode #input-value-w,
+body.dark-mode #input-unit-from-w,
+body.dark-mode #input-unit-to-w,
+body.dark-mode #input-value-t,
+body.dark-mode #input-unit-from-t,
+body.dark-mode #input-unit-to-t {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+
+#theme-toggle {
+    background-color: #2d69fd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+#theme-toggle:hover {
+    background-color: #0049c6;
+}

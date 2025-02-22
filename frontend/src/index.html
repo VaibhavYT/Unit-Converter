@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/styles.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body class="dark-mode">
+    <h1>Unit Converter</h1>
+    <div class="unit-converter-tabs">
+      <button class="length-tab" id="length-tab">length</button>
+      <button class="weight-tab" id="weight-tab">weight</button>
+      <button class="temperature-tab" id="temperature-tab">temperature</button>
+    </div>
+    <button id="theme-toggle">Toggle Night Mode</button>
+    <div class="form-section-length" id="form-section-length">
+      <form action="" class="form-section-form">
+        <label for="input-value-l">Enter the length to convert</label>
+        <input
+          type="text"
+          id="input-value-l"
+          placeholder="Enter value"
+          name="input-value-l"
+          required
+          class="input-value-l"
+        />
+
+        <label for="input-unit-from-l">Unit to convert from</label>
+        <input
+          type="text"
+          id="input-unit-from-l"
+          name="input-unit-from-l"
+          placeholder="Enter Unit"
+          class=""
+        />
+
+        <label for="input-unit-to-l">Unit to convert to</label>
+
+        <input
+          type="text"
+          id="input-unit-to-l"
+          placeholder="Enter unit"
+          name="input-unit-to-l"
+        />
+
+        <button id="length-form-button" type="submit">Convert</button>
+      </form>
+    </div>
+    <div class="form-section-weight" id="form-section-weight">
+      <form action="" class="form-section-form">
+        <label for="input-value-w">Enter the weight to convert</label>
+        <input
+          type="text"
+          id="input-value-w"
+          placeholder="Enter value"
+          name="input-value-w"
+          required
+        />
+
+        <label for="input-unit-from-w">Unit to convert from</label>
+        <input
+          type="text"
+          id="input-unit-from-w"
+          name="input-unit-from-w"
+          placeholder="Enter Unit"
+        />
+
+        <label for="input-unit-to-w">Unit to convert to</label>
+        <input
+          type="text"
+          id="input-unit-to-w"
+          placeholder="Enter unit"
+          name="input-unit-to-w"
+        />
+
+        <button id="weight-form-button" type="submit">Convert</button>
+      </form>
+    </div>
+    <div class="form-section-temperature" id="form-section-temperature">
+      <form action="" class="form-section-form">
+        <label for="input-value-t">Enter the temperature to convert</label>
+        <input
+          type="text"
+          id="input-value-t"
+          placeholder="Enter value"
+          name="input-value-t"
+          required
+          class="input-value-t"
+        />
+
+        <label for="input-unit-from-t">Unit to convert from</label>
+        <input
+          type="text"
+          id="input-unit-from-t"
+          name="input-unit-from-t"
+          placeholder="Enter Unit"
+          class=""
+        />
+
+        <label for="input-unit-to-t">Unit to convert to</label>
+        <input
+          type="text"
+          id="input-unit-to-t"
+          placeholder="Enter unit"
+          name="input-unit-to-t"
+        />
+
+        <button id="temperature-form-button" type="submit">Convert</button>
+      </form>
+    </div>
+    <button id="show">show</button>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
