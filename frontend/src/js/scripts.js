@@ -59,14 +59,6 @@ const InputToWeight = document.getElementById("input-unit-to-w");
 const InputFromTemperature = document.getElementById("input-unit-from-t");
 const InputToTemperature = document.getElementById("input-unit-to-t");
 
-const showBtn = document.getElementById("show");
-
-showBtn.onclick = () => {
-  const InputFromLength = document.getElementById("input-unit-from-l");
-  const InputLengthValue = InputFromLength.value.toLowerCase();
-  console.log(InputLengthValue);
-};
-
 function convertLength(value, fromUnit, toUnit) {
   const factors = { m: 1, km: 1000, cm: 0.01, mm: 0.001 };
   if (!factors[fromUnit] || !factors[toUnit]) {
